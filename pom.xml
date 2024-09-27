@@ -17,7 +17,7 @@
   </properties>
 
   <build>
-    <finalName>calculator</finalName>
+    <finalName>tempConverter</finalName>
     <plugins>
       <!-- Compiler Plugin for setting the Java version -->
       <plugin>

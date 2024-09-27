@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Define Docker Hub credentials ID
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub_credential'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'amirdi/tempconverter'
+        DOCKERHUB_REPO = 'georgechirikov/tempconverter'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/ADirin/TempConverter.git'
+                git 'https://github.com/GeorgeChirikov/tempConverter.git'
             }
         }
         stage('Build Docker Image') {
@@ -36,4 +36,3 @@ pipeline {
         }
     }
 }
-
